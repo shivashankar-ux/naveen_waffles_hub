@@ -669,3 +669,17 @@ box-shadow:0 10px 28px rgba(226,55,68,0.4);
     text-align: center;
   }
 }
+/* MOBILE NAVBAR FIX */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
