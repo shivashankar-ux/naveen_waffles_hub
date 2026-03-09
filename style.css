@@ -898,12 +898,9 @@ h1,h2,h3,h4,h5,.nav-logo span,.logo-blob,.btn-order,.btn-primary,.btn-secondary,
 @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
 
 .reveal-card {
-  opacity: 0; transform: translateY(32px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1);
-}
-
-.reveal-card.visible {
-  opacity: 1; transform: translateY(0);
 }
 
 /* ══ RESPONSIVE ══ */
