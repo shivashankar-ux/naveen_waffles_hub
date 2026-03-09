@@ -3,231 +3,285 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waffles Hub — Crispy. Golden. Unforgettable.</title>
+  <title>Waffles Hub — Hyderabad's Favourite</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-home">
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follower" id="cursorFollower"></div>
-
-<!-- NAVBAR -->
-<header class="navbar" id="navbar">
+<!-- NAV -->
+<nav class="nav" id="nav">
   <div class="nav-inner">
-    <a class="logo" href="#hero">
-      <span class="logo-icon">
-        <svg viewBox="0 0 32 32" fill="none">
-          <rect x="3" y="3" width="26" height="26" rx="4" stroke="#c9a94e" stroke-width="1.2" fill="rgba(201,169,78,0.08)"/>
-          <line x1="3" y1="11.7" x2="29" y2="11.7" stroke="#c9a94e" stroke-width="0.8" opacity="0.5"/>
-          <line x1="3" y1="20.3" x2="29" y2="20.3" stroke="#c9a94e" stroke-width="0.8" opacity="0.5"/>
-          <line x1="11.7" y1="3" x2="11.7" y2="29" stroke="#c9a94e" stroke-width="0.8" opacity="0.5"/>
-          <line x1="20.3" y1="3" x2="20.3" y2="29" stroke="#c9a94e" stroke-width="0.8" opacity="0.5"/>
-          <circle cx="16" cy="16" r="2" fill="#c9a94e"/>
-        </svg>
-      </span>
-      <span class="logo-text">Waffles Hub</span>
+    <a href="index.html" class="nav-logo">
+      <div class="logo-blob">W</div>
+      <span>Waffles Hub</span>
     </a>
-    <nav class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#reviews">Reviews</a>
-    </nav>
-    <a href="#footer" class="nav-cta">
-      <span>Contact</span>
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </a>
-    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="findus.html">Find Us</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank" class="btn-order">Order Now 🛵</a>
+    </div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
   </div>
-</header>
+</nav>
 
-<div class="mobile-overlay" id="mobileOverlay">
-  <nav class="mobile-nav">
-    <a href="#hero" onclick="closeMobile()">Home</a>
-    <a href="#menu" onclick="closeMobile()">Menu</a>
-    <a href="#reviews" onclick="closeMobile()">Reviews</a>
-    <a href="#footer" onclick="closeMobile()">Contact</a>
-  </nav>
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" onclick="closeBurger()">Home</a>
+  <a href="menu.html" onclick="closeBurger()">Menu</a>
+  <a href="findus.html" onclick="closeBurger()">Find Us</a>
+  <a href="https://www.swiggy.com/direct/brand/342209" target="_blank" class="mob-order">Order Now 🛵</a>
 </div>
 
 <!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=1600&q=80" alt="Waffles" class="hero-img">
-    <div class="hero-overlay"></div>
+<section class="hero">
+  <div class="hero-shapes">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Hyderabad's Finest</p>
-    <h1 class="hero-title">
-      <span class="line">Crispy.</span>
-      <span class="line">Golden.</span>
-      <span class="line italic">Unforgettable.</span>
+    <div class="hero-badge">🧇 Hyderabad's #1 Waffle Spot</div>
+    <h1 class="hero-h1">
+      Life is <em>sweeter</em><br>with a waffle
     </h1>
-    <p class="hero-sub">Handcrafted waffles made fresh every morning —<br>because you deserve the best bite of your day.</p>
+    <p class="hero-p">Crispy, golden, loaded with your favourite toppings — made fresh every single day. Starting ₹59.</p>
     <div class="hero-btns">
-      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank" class="btn-swiggy">
-        <span>🛵</span><span>Order on Swiggy</span>
-      </a>
-      <a href="https://zoma.to/r/21870939" target="_blank" class="btn-zomato">
-        <span>🍽</span><span>Order on Zomato</span>
-      </a>
+      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank" class="btn-primary">Order on Swiggy 🛵</a>
+      <a href="https://zoma.to/r/21870939" target="_blank" class="btn-secondary">Order on Zomato 🍽</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>500+</strong><span>Happy customers</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>20+</strong><span>Waffle flavours</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>100%</strong><span>Pure veg</span></div>
     </div>
   </div>
-  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+  <div class="hero-visual">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=800&q=90" alt="Waffle" class="hero-img">
+      <div class="img-blob"></div>
+    </div>
+    <div class="float-tag t1">🔥 Trending</div>
+    <div class="float-tag t2">⭐ 4.9 Rating</div>
+    <div class="float-tag t3">🟢 Pure Veg</div>
+  </div>
 </section>
 
 <!-- MARQUEE -->
-<div class="marquee-section">
-  <div class="marquee-track">
-    <span>Waffles</span><span class="dot">✦</span><span>Pancakes</span><span class="dot">✦</span><span>Cake Bowls</span><span class="dot">✦</span><span>100% Pure Veg</span><span class="dot">✦</span><span>Fresh Daily</span><span class="dot">✦</span><span>Hyderabad</span><span class="dot">✦</span><span>Waffles</span><span class="dot">✦</span><span>Pancakes</span><span class="dot">✦</span><span>Cake Bowls</span><span class="dot">✦</span><span>100% Pure Veg</span><span class="dot">✦</span><span>Fresh Daily</span><span class="dot">✦</span><span>Hyderabad</span><span class="dot">✦</span>
+<div class="marquee">
+  <div class="marquee-inner">
+    <span>Waffles ✦</span><span>Pancakes ✦</span><span>Cake Bowls ✦</span><span>Nutella ✦</span><span>Biscoff ✦</span><span>KitKat ✦</span><span>Oreo ✦</span><span>Fresh Daily ✦</span><span>Waffles ✦</span><span>Pancakes ✦</span><span>Cake Bowls ✦</span><span>Nutella ✦</span><span>Biscoff ✦</span><span>KitKat ✦</span><span>Oreo ✦</span><span>Fresh Daily ✦</span>
   </div>
 </div>
 
-<!-- MENU -->
-<section class="menu" id="menu">
-  <div class="menu-container">
-    <div class="section-header">
-      <p class="section-eyebrow">Our Menu</p>
-      <h2 class="section-title">Made fresh, <em>every single day</em></h2>
-    </div>
-    <div class="menu-tabs">
-      <button class="tab-btn active" onclick="showTab('waffles', this)">Waffles</button>
-      <button class="tab-btn" onclick="showTab('pancakes', this)">Pancakes</button>
-      <button class="tab-btn" onclick="showTab('cakebowls', this)">Cake Bowls</button>
-    </div>
-
-    <div class="tab-content active" id="tab-waffles">
-      <div class="menu-grid">
-        <div class="menu-card"><div class="card-number">01</div><div class="card-body"><h3>Dark & White Delight</h3><div class="card-prices"><span>Mini <strong>₹59</strong></span><span>Large <strong>₹99</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">02</div><div class="card-body"><h3>Double Chocolate</h3><div class="card-prices"><span>Mini <strong>₹59</strong></span><span>Large <strong>₹99</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">03</div><div class="card-body"><h3>Dark Fantasy</h3><div class="card-prices"><span>Mini <strong>₹69</strong></span><span>Large <strong>₹119</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">04</div><div class="card-body"><h3>Triple Belgium</h3><div class="card-prices"><span>Mini <strong>₹69</strong></span><span>Large <strong>₹199</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">05</div><div class="card-body"><h3>Ultimate Oreo</h3><div class="card-prices"><span>Mini <strong>₹69</strong></span><span>Large <strong>₹129</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">06</div><div class="card-body"><h3>Milky Bar</h3><div class="card-prices"><span>Mini <strong>₹69</strong></span><span>Large <strong>₹129</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">07</div><div class="card-body"><h3>Naughty Nutella</h3><div class="card-prices"><span>Mini <strong>₹79</strong></span><span>Large <strong>₹139</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">08</div><div class="card-body"><h3>KitKat Crunch</h3><div class="card-prices"><span>Mini <strong>₹79</strong></span><span>Large <strong>₹139</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">09</div><div class="card-body"><h3>Biscoff</h3><div class="card-prices"><span>Mini <strong>₹79</strong></span><span>Large <strong>₹139</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">10</div><div class="card-body"><h3>Pistachio</h3><div class="card-prices"><span>Mini <strong>₹79</strong></span><span>Large <strong>₹139</strong></span></div></div><div class="card-hover-bg"></div></div>
+<!-- WHY US -->
+<section class="why reveal-section">
+  <div class="container">
+    <div class="section-label">Why everyone loves us</div>
+    <h2 class="section-h2">Made different, <em>on purpose</em></h2>
+    <div class="why-grid">
+      <div class="why-card reveal-card" style="--i:0">
+        <div class="why-icon">🧇</div>
+        <h3>Fresh Every Day</h3>
+        <p>Every waffle is made to order. No freezing, no shortcuts — just fresh batter and love.</p>
       </div>
-      <p class="veg-badge">🟢 100% Pure Veg</p>
-    </div>
-
-    <div class="tab-content" id="tab-pancakes">
-      <div class="menu-grid">
-        <div class="menu-card"><div class="card-number">01</div><div class="card-body"><h3>Dark Choco Pancake</h3><div class="card-prices"><span><strong>₹59</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">02</div><div class="card-body"><h3>Double Choco Pancake</h3><div class="card-prices"><span><strong>₹59</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">03</div><div class="card-body"><h3>Triple Layer Pancake</h3><div class="card-prices"><span><strong>₹69</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">04</div><div class="card-body"><h3>Crushed Oreo Pancake</h3><div class="card-prices"><span><strong>₹79</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">05</div><div class="card-body"><h3>Nutalia</h3><div class="card-prices"><span><strong>₹85</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">06</div><div class="card-body"><h3>Biscoff Pancake</h3><div class="card-prices"><span><strong>₹90</strong></span></div></div><div class="card-hover-bg"></div></div>
+      <div class="why-card reveal-card" style="--i:1">
+        <div class="why-icon">🌿</div>
+        <h3>100% Pure Veg</h3>
+        <p>Every single item on our menu is completely vegetarian. Guilt-free indulgence every time.</p>
       </div>
-      <div class="customizations">
-        <h4>Add-ons & Customizations</h4>
-        <div class="custom-list">
-          <div class="custom-row"><span>Choco Chips</span><span>₹10</span></div>
-          <div class="custom-row"><span>Oreo</span><span>₹10</span></div>
-          <div class="custom-row"><span>Nutalia</span><span>₹15</span></div>
-          <div class="custom-row"><span>KitKat</span><span>₹15</span></div>
-          <div class="custom-row"><span>Chocolate</span><span>₹15</span></div>
-          <div class="custom-row"><span>Biscoff</span><span>₹15</span></div>
+      <div class="why-card reveal-card" style="--i:2">
+        <div class="why-icon">💰</div>
+        <h3>Starting ₹59</h3>
+        <p>Premium taste without the premium price. Great waffles shouldn't cost a fortune.</p>
+      </div>
+      <div class="why-card reveal-card" style="--i:3">
+        <div class="why-icon">⚡</div>
+        <h3>Fast Delivery</h3>
+        <p>Order on Swiggy or Zomato and get your waffles hot and crispy at your door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACKING CARDS — BESTSELLERS -->
+<section class="stack-section reveal-section">
+  <div class="container">
+    <div class="section-label">Bestsellers</div>
+    <h2 class="section-h2">Cards that make you <em>hungry</em></h2>
+    <p class="section-sub">Scroll through our most loved creations</p>
+  </div>
+  <div class="stack-wrapper" id="stackWrapper">
+    <div class="stack-card" data-index="0" style="--card-color:#FF6B6B">
+      <div class="stack-card-inner">
+        <div class="stack-left">
+          <span class="stack-num">01</span>
+          <h3>Naughty Nutella</h3>
+          <p>Rich hazelnut chocolate spread piled on a crispy waffle — the one everyone keeps coming back for.</p>
+          <div class="stack-price">Mini ₹79 &nbsp;·&nbsp; Large ₹139</div>
+          <a href="menu.html" class="stack-btn">See Full Menu →</a>
+        </div>
+        <div class="stack-right">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Nutella Waffle">
         </div>
       </div>
     </div>
-
-    <div class="tab-content" id="tab-cakebowls">
-      <div class="menu-grid">
-        <div class="menu-card"><div class="card-number">01</div><div class="card-body"><h3>Classic Bowl</h3><div class="card-prices"><span><strong>₹109</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">02</div><div class="card-body"><h3>Choco Chips Bowl</h3><div class="card-prices"><span><strong>₹119</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">03</div><div class="card-body"><h3>Triple Bowl</h3><div class="card-prices"><span><strong>₹119</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">04</div><div class="card-body"><h3>Double Bowl</h3><div class="card-prices"><span><strong>₹119</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">05</div><div class="card-body"><h3>Oreo Bowl</h3><div class="card-prices"><span><strong>₹129</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">06</div><div class="card-body"><h3>Kit-Kat Bowl</h3><div class="card-prices"><span><strong>₹129</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">07</div><div class="card-body"><h3>Nutella Bowl</h3><div class="card-prices"><span><strong>₹129</strong></span></div></div><div class="card-hover-bg"></div></div>
-        <div class="menu-card"><div class="card-number">08</div><div class="card-body"><h3>Viral Choco Shots</h3><div class="card-prices"><span><strong>₹139</strong></span></div></div><div class="card-hover-bg"></div></div>
+    <div class="stack-card" data-index="1" style="--card-color:#FF8C42">
+      <div class="stack-card-inner">
+        <div class="stack-left">
+          <span class="stack-num">02</span>
+          <h3>Biscoff Dream</h3>
+          <p>Caramelised Biscoff spread with a crunch — warm, spiced and absolutely unforgettable.</p>
+          <div class="stack-price">Mini ₹79 &nbsp;·&nbsp; Large ₹139</div>
+          <a href="menu.html" class="stack-btn">See Full Menu →</a>
+        </div>
+        <div class="stack-right">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&q=80" alt="Biscoff Waffle">
+        </div>
       </div>
     </div>
+    <div class="stack-card" data-index="2" style="--card-color:#FFD93D">
+      <div class="stack-card-inner">
+        <div class="stack-left">
+          <span class="stack-num">03</span>
+          <h3>KitKat Crunch</h3>
+          <p>Crushed KitKat on a fluffy waffle with chocolate drizzle — every bite is a different texture.</p>
+          <div class="stack-price">Mini ₹79 &nbsp;·&nbsp; Large ₹139</div>
+          <a href="menu.html" class="stack-btn">See Full Menu →</a>
+        </div>
+        <div class="stack-right">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="KitKat Waffle">
+        </div>
+      </div>
+    </div>
+    <div class="stack-card" data-index="3" style="--card-color:#6BCB77">
+      <div class="stack-card-inner">
+        <div class="stack-left">
+          <span class="stack-num">04</span>
+          <h3>Viral Choco Shots</h3>
+          <p>Our most viral cake bowl — warm chocolate cake with a molten centre. Pure joy in a bowl.</p>
+          <div class="stack-price">₹139</div>
+          <a href="menu.html" class="stack-btn">See Full Menu →</a>
+        </div>
+        <div class="stack-right">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80" alt="Choco Shots">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stack-nav">
+    <button class="stack-prev" id="stackPrev">←</button>
+    <div class="stack-dots" id="stackDots"></div>
+    <button class="stack-next" id="stackNext">→</button>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section class="reviews" id="reviews">
-  <div class="reviews-container">
-    <div class="section-header">
-      <p class="section-eyebrow">Reviews</p>
-      <h2 class="section-title">Loved by every <em>sweet tooth</em></h2>
-    </div>
+<section class="reviews reveal-section">
+  <div class="container">
+    <div class="section-label">What people say</div>
+    <h2 class="section-h2">Real reviews, <em>real love</em></h2>
     <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source swiggy-source">Swiggy</span></div>
+      <div class="rev-card reveal-card" style="--i:0">
+        <div class="rev-stars">★★★★★</div>
         <p>"Honestly the best waffles I've ever had. The Naughty Nutella is absolutely insane — crispy outside, soft inside."</p>
-        <div class="review-author"><div class="avatar">R</div><span>Riya Sharma</span></div>
+        <div class="rev-author">
+          <div class="rev-av" style="background:#FF6B6B">R</div>
+          <div><strong>Riya Sharma</strong><span>via Swiggy</span></div>
+        </div>
       </div>
-      <div class="review-card featured">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source zomato-source">Zomato</span></div>
-        <p>"Ordered the KitKat Crunch waffle and a Cake Bowl. Both were phenomenal. Fast delivery, great packaging. Highly recommend!"</p>
-        <div class="review-author"><div class="avatar">A</div><span>Arjun Mehta</span></div>
+      <div class="rev-card reveal-card featured-rev" style="--i:1">
+        <div class="rev-stars">★★★★★</div>
+        <p>"Ordered KitKat Crunch and a Cake Bowl. Both were phenomenal. Fast delivery, great packaging. 10/10!"</p>
+        <div class="rev-author">
+          <div class="rev-av" style="background:#FF8C42">A</div>
+          <div><strong>Arjun Mehta</strong><span>via Zomato</span></div>
+        </div>
       </div>
-      <div class="review-card">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source swiggy-source">Swiggy</span></div>
-        <p>"The Biscoff waffle is a game changer. Never thought I'd find something this good in my city. Pure veg and still so rich!"</p>
-        <div class="review-author"><div class="avatar">P</div><span>Priya Nair</span></div>
+      <div class="rev-card reveal-card" style="--i:2">
+        <div class="rev-stars">★★★★★</div>
+        <p>"The Biscoff waffle is a game changer. Pure veg and still so rich and indulgent. My family loves it!"</p>
+        <div class="rev-author">
+          <div class="rev-av" style="background:#FFD93D">P</div>
+          <div><strong>Priya Nair</strong><span>via Swiggy</span></div>
+        </div>
       </div>
-      <div class="review-card">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source zomato-source">Zomato</span></div>
-        <p>"Tried the Viral Choco Shots and Oreo Pancake. Both were incredible value for money. My whole family loved it!"</p>
-        <div class="review-author"><div class="avatar">S</div><span>Sahil Bose</span></div>
+      <div class="rev-card reveal-card" style="--i:3">
+        <div class="rev-stars">★★★★★</div>
+        <p>"Triple Belgium waffle every weekend — it's become a ritual. Consistent quality every single time!"</p>
+        <div class="rev-author">
+          <div class="rev-av" style="background:#6BCB77">N</div>
+          <div><strong>Neha Kulkarni</strong><span>via Swiggy</span></div>
+        </div>
       </div>
-      <div class="review-card">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source swiggy-source">Swiggy</span></div>
-        <p>"Triple Belgium waffle is my go-to every weekend. The quality is so consistent. Worth every rupee!"</p>
-        <div class="review-author"><div class="avatar">N</div><span>Neha Kulkarni</span></div>
-      </div>
-      <div class="review-card">
-        <div class="review-top"><div class="stars">★★★★★</div><span class="review-source zomato-source">Zomato</span></div>
-        <p>"Dark & White Delight is pure magic. The chocolate drizzle, the crunch — everything is just perfect. Best dessert spot!"</p>
-        <div class="review-author"><div class="avatar">K</div><span>Karan Joshi</span></div>
-      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-shapes">
+    <div class="cta-s1"></div>
+    <div class="cta-s2"></div>
+  </div>
+  <div class="container cta-inner">
+    <h2>Craving a waffle right now?</h2>
+    <p>Order in minutes on Swiggy or Zomato. Hot and crispy at your door.</p>
+    <div class="cta-btns">
+      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank" class="btn-swiggy">🛵 Swiggy</a>
+      <a href="https://zoma.to/r/21870939" target="_blank" class="btn-zomato">🍽 Zomato</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer" id="footer">
-  <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo">Waffles Hub</div>
-        <p>Crispy. Golden. Unforgettable.<br>Made fresh every single day.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/waffles_hub1?igsh=MWwyd3F5aGllOXdnZQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-          <a href="https://maps.app.goo.gl/ycZbX25pF25yN1WCA?g_st=iw" target="_blank">Find Us</a>
-        </div>
-      </div>
-      <div class="footer-col"><h5>Quick Links</h5><a href="#hero">Home</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a></div>
-      <div class="footer-col"><h5>Order Online</h5><a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank">Swiggy</a><a href="https://zoma.to/r/21870939" target="_blank">Zomato</a></div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="https://maps.app.goo.gl/ycZbX25pF25yN1WCA?g_st=iw" target="_blank">📍 Hyderabad, Telangana</a>
-        <a href="tel:8328346672">📞 +91 83283 46672</a>
-        <a href="mailto:nagalinach@gmail.com">✉️ nagalinach@gmail.com</a>
-        <p>🕐 Open: 11am – 11pm</p>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><div class="logo-blob sm">W</div> Waffles Hub</div>
+      <p>Crispy. Colourful. Unforgettable.<br>Made fresh in Hyderabad.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/waffles_hub1" target="_blank">📸 Instagram</a>
+        <a href="https://maps.app.goo.gl/ycZbX25pF25yN1WCA" target="_blank">📍 Find Us</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Waffles Hub. All rights reserved.</p>
-      <p>Made with ♥ in Hyderabad</p>
+    <div class="footer-col">
+      <h5>Pages</h5>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="findus.html">Find Us</a>
     </div>
+    <div class="footer-col">
+      <h5>Order</h5>
+      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank">Swiggy</a>
+      <a href="https://zoma.to/r/21870939" target="_blank">Zomato</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="tel:8328346672">+91 83283 46672</a>
+      <a href="mailto:nagalinach@gmail.com">nagalinach@gmail.com</a>
+      <p>🕐 11am – 11pm daily</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Waffles Hub · Made with ♥ in Hyderabad</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/918328346672" target="_blank" class="whatsapp-float">
-  <svg viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
+<!-- WHATSAPP -->
+<a href="https://wa.me/918328346672" target="_blank" class="wa-float">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.523 5.847L.057 23.882a.5.5 0 0 0 .611.611l6.037-1.466A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.528-5.221-1.448l-.374-.222-3.878.942.96-3.878-.244-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
-</svg>
+  </svg>
 </a>
+
+<script src="script.js"></script>
 </body>
 </html>
