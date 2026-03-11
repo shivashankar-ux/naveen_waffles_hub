@@ -24,7 +24,7 @@
       <a href="findus.html">Find Us</a>
     </div>
     <div class="nav-actions">
-      <a href="https://www.swiggy.com/direct/brand/342209?source=swiggy-direct&subSource=generic" target="_blank" class="btn-order">Order Now 🛵</a>
+      <a href="#order" class="btn-order" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'});return false;">Order Now 🛵</a>
     </div>
     <button class="burger" id="burger"><span></span><span></span><span></span></button>
   </div>
@@ -35,7 +35,7 @@
   <a href="index.html" onclick="closeBurger()">Home</a>
   <a href="menu.html" onclick="closeBurger()">Menu</a>
   <a href="findus.html" onclick="closeBurger()">Find Us</a>
-  <a href="https://www.swiggy.com/direct/brand/342209" target="_blank" class="mob-order">Order Now 🛵</a>
+  <a href="#cta" onclick="closeBurger();setTimeout(()=>document.getElementById('cta').scrollIntoView({behavior:'smooth'}),300);return false;" class="mob-order">Order Now 🛵</a>
 </div>
 
 <!-- HERO -->
@@ -65,7 +65,7 @@
   </div>
   <div class="hero-visual">
     <div class="hero-img-wrap">
-      <img src="https://picsum.photos/seed/heromain/800/900" alt="Waffle" class="hero-img">
+      <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=800&q=90" alt="Waffle" class="hero-img">
       <div class="img-blob"></div>
     </div>
     <div class="float-tag t1">🔥 Trending</div>
@@ -129,7 +129,7 @@
           <a href="menu.html" class="stack-btn">See Full Menu →</a>
         </div>
         <div class="stack-right">
-          <img src="https://picsum.photos/seed/nutella7/500/400" alt="Nutella Waffle">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&q=80" alt="Nutella Waffle">
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@
           <a href="menu.html" class="stack-btn">See Full Menu →</a>
         </div>
         <div class="stack-right">
-          <img src="https://picsum.photos/seed/biscoff9/500/400" alt="Biscoff Waffle">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500&q=80" alt="Biscoff Waffle">
         </div>
       </div>
     </div>
@@ -157,7 +157,7 @@
           <a href="menu.html" class="stack-btn">See Full Menu →</a>
         </div>
         <div class="stack-right">
-          <img src="https://picsum.photos/seed/kitkat8/500/400" alt="KitKat Waffle">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500&q=80" alt="KitKat Waffle">
         </div>
       </div>
     </div>
@@ -171,7 +171,7 @@
           <a href="menu.html" class="stack-btn">See Full Menu →</a>
         </div>
         <div class="stack-right">
-          <img src="https://picsum.photos/seed/choco2/500/400" alt="Choco Shots">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&q=80" alt="Choco Shots">
         </div>
       </div>
     </div>
@@ -226,7 +226,7 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" id="cta">
   <div class="cta-shapes">
     <div class="cta-s1"></div>
     <div class="cta-s2"></div>
